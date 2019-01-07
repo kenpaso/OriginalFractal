@@ -17,7 +17,7 @@ public void draw()
 	}
 	if(paso==1240)
 	{
-		paso =-240;
+		myFractal(250,paso,500);
 	}
 	
 }
