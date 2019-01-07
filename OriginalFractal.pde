@@ -1,4 +1,5 @@
 int paso =-240;
+int second =-240;
 
 public void setup()
 {
@@ -11,14 +12,26 @@ public void draw()
 	fill(255,0,0);
 	strokeWeight(7);
 	myFractal(250,paso,500);
-	if(paso<1500)
+	myFractal(250, second-1050, 500);
+
+	if(paso<2000 )
 	{
 		paso++;
 	}
-	if(paso==1240)
+	if(second==1800)
 	{
-		paso =-240;
+		paso =-285;
 	}
+
+	if(second<3000 )
+	{
+		second++;
+	}
+	if(second==2340)
+	{
+		second =120;
+	}
+
 	
 }
 public void myFractal(int x, int y, int siz)
